@@ -21,3 +21,11 @@ TORO サーバーで使われている コードの一部
 Github の API を利用して <https://github.com/TORO-Server/TORO-ResourcePack/releases>
 
 の最新のリソースパックのダウンロード URL をコンソールに出力します。
+
+## [editProperty.py](/editProperty.py)
+
+Minecraft のサーバーの設定ファイル `server.properties` のプロパティを変更します。
+
+```sh
+python3 editProperty.py 変更したいプロパティ 設定したい値
+```
