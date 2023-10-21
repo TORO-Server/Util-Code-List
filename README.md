@@ -6,6 +6,10 @@ TORO サーバーで使われている コードの一部
 
 "01.zip"で終わるファイル名 以外の zip ファイルを削除する ShellScript
 
+```sh
+bash remove.sh
+```
+
 ## [getJarFile.sh](/getJarFile.sh)
 
 現在のディレクトリ内の.jar ファイルを検索し、
@@ -16,11 +20,19 @@ TORO サーバーで使われている コードの一部
 
 該当するファイルが見つからない場合は、エラーメッセージを出力します。
 
+```sh
+bash getJarFile.sh
+```
+
 ## [getLatestPack.py](/getLatestPack.py)
 
 Github の API を利用して <https://github.com/TORO-Server/TORO-ResourcePack/releases>
 
 の最新のリソースパックのダウンロード URL をコンソールに出力します。
+
+```sh
+python3 getLatestPack.py
+```
 
 ## [editProperty.py](/editProperty.py)
 
