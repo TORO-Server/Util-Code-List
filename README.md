@@ -16,7 +16,7 @@ TORO サーバーで使われている コードの一部
 
 該当するファイルが見つからない場合は、エラーメッセージを出力します。
 
-## [getLatestAssets.py](/getLatestAssets.py)
+## [getLatestPack.py](/getLatestPack.py)
 
 Github の API を利用して <https://github.com/TORO-Server/TORO-ResourcePack/releases>
 
