@@ -10,7 +10,7 @@ TORO サーバーで使われている コードの一部
 bash remove.sh
 ```
 
-## [getJarFile.sh](/getJarFile.sh)
+## [getJarFile.py](/getJarFile.py)
 
 現在のディレクトリ内の.jar ファイルを検索し、
 
@@ -21,16 +21,16 @@ bash remove.sh
 該当するファイルが見つからない場合は、エラーメッセージを出力します。
 
 ```sh
-bash getJarFile.sh 含まれている文字列
-```
-
-## [getJarFile.py](/getJarFile.py)
-
-[getJarFile.sh](/getJarFile.sh) を Python3 で書き直したもの
-
-```sh
 python3 getJarFile.py 含まれている文字列
 ```
+
+例えば、現在のディレクトリに 「test-001.jar」という jar ファイルがある場合
+
+```sh
+python3 getJarFile.py test
+```
+
+を実行すると`./test-001.jar`とコンソールに出力されます。
 
 ## [getLatestPack.py](/getLatestPack.py)
 
