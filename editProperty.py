@@ -10,7 +10,7 @@ def edit_server_properties(file_path, property_key, new_value):
     for i, line in enumerate(lines):
         if line.startswith(property_key + "="):
             lines[i] = f"{property_key}={re.escape(new_value)}\n"
-    # 変更を書き戻す
+    # ファイルを更新する
     with open(file_path, 'w') as file:
         file.writelines(lines)
 
