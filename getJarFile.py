@@ -22,7 +22,8 @@ def getJarPath(path: str, search_string=""):
     return f"No jar files found containing '{search_string}'"
 
 
-# 第一引数を取得
-search_string = argv[1] if len(argv) != 1 else ""
-# コンソールに出力
-print(getJarPath(".", search_string))
+if __name__ == '__main__':
+    # 第一引数を取得
+    search_string = argv[1] if len(argv) != 1 else ""
+    # コンソールに出力
+    print(getJarPath(".", search_string))
