@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import os
-import sys
+from sys import argv
 
 # ===== 説明 ===== start
 # 現在のディレクトリ内の.jarファイルを検索し、
@@ -9,14 +9,20 @@ import sys
 # 該当するファイルが見つからない場合は、エラーメッセージを出力します。
 # ===== 説明 ===== end
 
+
+# 指定された階層のjarファイルを検索して、
+# 引数 search_string の文字が含まれていた場合、
+# その jarファイルのパスを return する。
+# なかった場合はエラーメッセージを return する。
+def getJarPath(path: str, search_string=""):
+    for file in os.listdir(path):
+        if file.endswith('.jar') and search_string in file:
+            return file
+    # 該当するファイルが見つからなかった場合のメッセージ
+    return f"No jar files found containing '{search_string}'"
+
+
 # 第一引数を取得
-search_string = sys.argv[1]
-
-# 同じ階層のjarファイルを検索
-for file in os.listdir('.'):
-    if file.endswith('.jar') and search_string in file:
-        print(file)
-        sys.exit(0)
-
-# 該当するファイルが見つからなかった場合のメッセージ
-print(f"No jar files found containing '{search_string}'")
+search_string = argv[1] if len(argv) != 1 else ""
+# コンソールに出力
+print(getJarPath(".", search_string))
