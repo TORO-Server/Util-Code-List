@@ -8,7 +8,7 @@ def getLatest(User: str, Repository: str):
     # GETリクエスト 送信
     with request.urlopen(URL) as response:
         data = json.load(response)
-        return data["assets"][0]["browser_download_url"]
+    return data["assets"][0]["browser_download_url"]
 
 
 if __name__ == '__main__':
