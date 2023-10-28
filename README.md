@@ -24,7 +24,9 @@ bash remove.sh
 python3 getJarFile.py 含まれている文字列
 ```
 
-例えば、現在のディレクトリに 「test-001.jar」という jar ファイルがある場合
+### 例
+
+現在のディレクトリに 「test-001.jar」という jar ファイルがある場合
 
 ```sh
 python3 getJarFile.py test
