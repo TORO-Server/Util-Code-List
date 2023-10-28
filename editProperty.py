@@ -1,13 +1,6 @@
 import re
 import sys
 
-# server.properties のファイルパス
-PATH = "server.properties"
-# 変更したいプロパティの名前
-KEY = sys.argv[1:]
-# プロパティに設定したい値
-VALUE = sys.argv[2:]
-
 
 def edit_server_properties(file_path, property_key, new_value):
     # ファイルを開く
@@ -22,4 +15,12 @@ def edit_server_properties(file_path, property_key, new_value):
         file.writelines(lines)
 
 
-edit_server_properties(PATH, KEY, VALUE)
+if __name__ == '__main__':
+    # server.properties のファイルパス
+    PATH = "server.properties"
+    # 変更したいプロパティの名前
+    KEY = sys.argv[1:]
+    # プロパティに設定したい値
+    VALUE = sys.argv[2:]
+
+    edit_server_properties(PATH, KEY, VALUE)
