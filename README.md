@@ -21,7 +21,15 @@ bash remove.sh
 該当するファイルが見つからない場合は、エラーメッセージを出力します。
 
 ```sh
-bash getJarFile.sh
+bash getJarFile.sh 含まれている文字列
+```
+
+## [getJarFile.py](/getJarFile.py)
+
+[getJarFile.sh](/getJarFile.sh) を Python3 で書き直したもの
+
+```sh
+python3 getJarFile.py 含まれている文字列
 ```
 
 ## [getLatestPack.py](/getLatestPack.py)
