@@ -16,7 +16,9 @@
 bash getJarFile.sh 含まれている文字列
 ```
 
-例えば、現在のディレクトリに 「test-001.jar」という jar ファイルがある場合
+### 例
+
+現在のディレクトリに 「test-001.jar」という jar ファイルがある場合
 
 ```sh
 bash getJarFile.sh test
