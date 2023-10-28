@@ -17,7 +17,7 @@ from sys import argv
 def getJarPath(path: str, search_string=""):
     for file in os.listdir(path):
         if file.endswith('.jar') and search_string in file:
-            return file
+            return os.path.join(path, file)
     # 該当するファイルが見つからなかった場合のメッセージ
     return f"No jar files found containing '{search_string}'"
 
