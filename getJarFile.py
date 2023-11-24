@@ -10,6 +10,10 @@ from sys import argv
 # ===== 説明 ===== end
 
 
+# 第一引数を取得
+search_string = argv[1] if len(argv) != 1 else ""
+
+
 # 指定された階層のjarファイルを検索して、
 # 引数 search_string の文字が含まれていた場合、
 # その jarファイルのパスを return する。
@@ -22,8 +26,5 @@ def getJarPath(path: str, search_string=""):
     return f"No jar files found containing '{search_string}'"
 
 
-if __name__ == '__main__':
-    # 第一引数を取得
-    search_string = argv[1] if len(argv) != 1 else ""
-    # コンソールに出力
-    print(getJarPath(".", search_string))
+# コンソールに出力
+print(getJarPath(".", search_string))
