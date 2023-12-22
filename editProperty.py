@@ -5,9 +5,9 @@ import sys
 # server.properties のファイルパス
 PATH = "server.properties"
 # 変更したいプロパティの名前
-KEY = sys.argv[1:]
+KEY = sys.argv[1]
 # プロパティに設定したい値
-VALUE = sys.argv[2:]
+VALUE = sys.argv[2]
 
 
 def edit_server_properties(file_path, property_key, new_value):
