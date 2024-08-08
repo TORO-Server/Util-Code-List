@@ -24,11 +24,8 @@ bash remove.sh
 python3 getJarFile.py 含まれている文字列
 ```
 
-### 例
-
-現在のディレクトリに 「test-001.jar」という jar ファイルがある場合
-
 ```sh
+# 現在のディレクトリに "test-001.jar" という jar ファイルがある場合
 python3 getJarFile.py test
 ```
 
@@ -50,4 +47,17 @@ Minecraft のサーバーの設定ファイル `server.properties` のプロパ�
 
 ```sh
 python3 editProperty.py 変更したいプロパティ 設定したい値
+```
+
+## [getLatestGeyser.py](/getLatestGeyser.py)
+
+最新の GeyserMC をダウンロードするスクリプト
+
+すでに最新版を導入している場合はダウンロードされない
+
+```sh
+# Velocity版 GeyserMC をダウンロードする場合
+python3 getLatestGeyser.py velocity ./plugins/Geyser-Velocity.jar
+# Spigot版 GeyserMC をダウンロードする場合
+python3 getLatestGeyser.py spigot ./plugins/Geyser-Spigot.jar
 ```
