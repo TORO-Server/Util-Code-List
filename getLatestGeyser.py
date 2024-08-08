@@ -46,10 +46,14 @@ def downloadLatest(type: str, path: str):
         f.write(binary)
 
 
+# 最新版の GeyserMC のファイルのハッシュ値
 sha256_cloud = getLatest_sha256(TPYE)
+# ローカルにある GeyserMC のファイルのハッシュ値
 sha256_local = getFile_sha256(PATH)
 
+# 最新版のGeyserMCとローカルにあるGeyserMCのハッシュ値が違っていたら
 if sha256_cloud != sha256_local:
+    # GeyserMC をダウンロードする
     print(f"GeyserMC {TPYE.capitalize()} Download...")
     downloadLatest(TPYE, PATH)
     print(f"{PATH} Done")
