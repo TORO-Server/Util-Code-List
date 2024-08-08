@@ -61,3 +61,16 @@ python3 getLatestGeyser.py velocity ./plugins/Geyser-Velocity.jar
 # Spigot版 GeyserMC をダウンロードする場合
 python3 getLatestGeyser.py spigot ./plugins/Geyser-Spigot.jar
 ```
+
+## [getLatestFloodgate.py](/getLatestFloodgate.py)
+
+最新の GeyserMC をダウンロードするスクリプト
+
+すでに最新版を導入している場合はダウンロードされない
+
+```sh
+# Velocity版 GeyserMC をダウンロードする場合
+python3 getLatestFloodgate.py velocity ./plugins/floodgate-velocity.jar
+# Spigot版 GeyserMC をダウンロードする場合
+python3 getLatestFloodgate.py spigot ./plugins/floodgate-spigot.jar
+```
