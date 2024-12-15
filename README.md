@@ -94,5 +94,5 @@ python3 getLatestVelocity.py ./velocity-3.4.0-SNAPSHOT-455.jar
 
 ```sh
 # Minecraft 1.20.4 で ローカルにある Paper が paper-1.20.4-430.jar の場合
-python3 getLatestPaper.py ./paper-1.20.4-430.jar 1.20.4
+python3 getLatestPaper.py ./paper-1.20.4-430.jar "1.20.4"
 ```
