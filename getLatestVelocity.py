@@ -47,7 +47,7 @@ def getFile_sha256(path: str):
 
 def downloadLatest(LatestObj: object, path: str):
     # URL
-    URL = f"https://api.papermc.io/v2/projects/{LatestObj["name"]}/versions/{LatestObj["version"]}/builds/{LatestObj["build"]}/downloads/{LatestObj["file"]}"
+    URL = f"https://api.papermc.io/v2/projects/{LatestObj['name']}/versions/{LatestObj['version']}/builds/{LatestObj['build']}/downloads/{LatestObj['file']}"
     # フォルダが存在しない場合は作成
     dir_path = os.path.dirname(path)
     if not os.path.exists(dir_path) and not os.path.isfile(path):
