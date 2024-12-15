@@ -74,3 +74,14 @@ python3 getLatestFloodgate.py velocity ./plugins/floodgate-velocity.jar
 # Spigot版 GeyserMC をダウンロードする場合
 python3 getLatestFloodgate.py spigot ./plugins/floodgate-spigot.jar
 ```
+
+## [getLatestVelocity.py](/getLatestVelocity.py)
+
+最新の Velocity をダウンロードするスクリプト
+
+すでに最新版を導入している場合はダウンロードされない
+
+```sh
+# ローカルにある Velocity が velocity-3.4.0-SNAPSHOT-455.jar の場合
+python3 getLatestVelocity.py ./velocity-3.4.0-SNAPSHOT-455.jar
+```
