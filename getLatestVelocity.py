@@ -74,6 +74,6 @@ sha256_local = getFile_sha256(PATH)
 # 最新版の Velocity とローカルにある Velocity のハッシュ値が違っていたら
 if sha256_cloud != sha256_local:
     # ダウンロードする
-    print(f"{LatestObj["file"]} Download...")
+    print(f"{LatestObj['file']} Download...")
     path = downloadLatest(LatestObj, PATH)
     print(f"{path} Done")
