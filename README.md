@@ -77,7 +77,7 @@ python3 getLatestFloodgate.py spigot ./plugins/floodgate-spigot.jar
 
 ## [getLatestVelocity.py](/getLatestVelocity.py)
 
-最新の Velocity をダウンロードするスクリプト
+最新の安定版 Velocity をダウンロードするスクリプト
 
 すでに最新版を導入している場合はダウンロードされない
 
@@ -88,7 +88,7 @@ python3 getLatestVelocity.py ./velocity-3.4.0-SNAPSHOT-455.jar
 
 ## [getLatestPaper.py](/getLatestPaper.py)
 
-指定した Minecraft バージョンの 最新の Paper をダウンロードするスクリプト
+指定した Minecraft バージョンの 最新の安定版 Paper をダウンロードするスクリプト
 
 すでに最新版を導入している場合はダウンロードされない
 
